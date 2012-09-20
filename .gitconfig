@@ -1,0 +1,36 @@
+[core]
+	editor = vim
+	excludesfile = /Users/napoleon/.gitignore
+[color]
+	ui = true
+[format]
+	pretty = oneline
+[user]
+	name = Chris Sloan
+	email = chris@chrissloan.info
+[alias]
+	last = cat-file commit HEAD
+        st = status
+        ci = commit
+        br = branch
+        co = checkout
+        df = diff
+        lg = log -p
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        ls = ls-files
+        who = shortlog -s --
+        k = !gitk
+        x = !gitx
+        alias = !sh -c 'g config --global -l | grep alias | sed s/alias.//g | sort'
+        pl = pull --rebase
+        ps = push
+        ss = stash save
+        sp = stash pop
+        ba = branch -a
+        tip = !sh -c 'g log -n 1 | head -n 1'
+[heroku]
+	account = chrissloan
+[push]
+	default = tracking
+
