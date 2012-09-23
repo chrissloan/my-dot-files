@@ -44,3 +44,6 @@ Pictures/
 Public/
 Sites/
 logfile
+.Trash/
+.labrador/
+pgadmin.log
